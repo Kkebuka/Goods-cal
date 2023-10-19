@@ -1,0 +1,48 @@
+body{
+    overflow: hidden;
+    background-color: rgb(34, 37, 37);
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+.container{
+    text-align: center;
+    background-color:white;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 3%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inpt{
+    
+    margin: 0px 10% 10px 10%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.cal{
+   width: 75%;
+   height: 40px;
+   font-size: large;
+   box-sizing: border-box;
+   margin: 0px auto 20px auto;
+   background-color: rgb(34, 37, 37);
+   color: white;
+}
+.result, #img-container{
+    display: none;
+}
+
+.dollar-price, .ctn-qtn, .ctn-cbm, .no-ctns, .pcs-price, .ctn-price{
+    height: 40px;
+    font-size: large;
+    width: 90%;
+    margin: 0px auto;
+}
+.first{
+    padding-top: 30px;
+}
+.ctn-price{
+    margin-bottom: 20px;
+}

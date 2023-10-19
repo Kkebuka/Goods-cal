@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head-div">
+            <h1 class="first" >Goods Price In Naira</h1>
+        </div>
+        <form action="" class="collect" id="form">
+            <div class="inpt">
+                <input type="number" placeholder="Carton Price($)" class="dollar-price">
+            </div>
+            <div class="inpt">
+                <input type="number" placeholder="Qty In Carton" class="ctn-qtn">
+            </div>
+            <div class="inpt">
+                <input type="number" placeholder="CBM per Carton" class="ctn-cbm">
+            </div>
+            <!-- <div class= "inpt"> -->
+                <!-- <span>No of Cartons:</span> -->
+                <!-- <input type="number" class="no-ctns" value="1" disabled> -->
+            <!-- </div> -->
+        </form>
+            <input type="Submit" class="cal" value="Calculate" > 
+            <div id="img-container">
+                <img src="/image/loading.gif" class="loading">
+            </div>
+            <div class="result">
+                <h2>The Price for :</h2>
+                <div class="inpt">
+                    <span>One Piece:</span>
+                    <input type="" class="pcs-price" disabled>
+                </div>
+                <div class="inpt">
+                    <span>One Carton:</span>
+                    <input type="" class="ctn-price" disabled>
+                </div>  
+            </div>
+            <div class="calc-con">        
+        
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
