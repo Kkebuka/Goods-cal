@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: rgb(34, 37, 37);
     box-sizing: border-box;
     max-width: 100vw;
@@ -14,14 +14,18 @@ body{
     border-radius: 3%;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+    height: auto;
+    margin-bottom: 20px;
 }
 .inpt{
     
     margin: 0px 10% 10px 10%;
     border-radius: 10px;
     box-sizing: border-box;
+    
 }
-.cal{
+.cal, .con{
    width: 75%;
    height: 40px;
    font-size: large;
@@ -29,6 +33,10 @@ body{
    margin: 0px auto 20px auto;
    background-color: rgb(34, 37, 37);
    color: white;
+}
+
+.cal, .collect {
+    display: none;
 }
 .result, #img-container{
     display: none;

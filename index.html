@@ -11,6 +11,28 @@
         <div class="head-div">
             <h1 class="first" >Goods Price In Naira</h1>
         </div>
+        <div class="const_value">
+            <form action="" class="const_form" id="conform">
+                <div>
+                    <label for="dollar">Dollar Rate($)</label>
+                    <input type="number" step="0.01" class="text" id="dollar" min="0">
+                </div>
+                <div>
+                    <label for="Freight">Freight($):</label>
+                    <input type="number" class="text" id="freight" min="000" >
+                </div>
+                <div>
+                    <label for="clearing">Clearing Fee(N):</label>
+                    <input type="number" class="text" id="clearing" min="0">
+                </div>
+                <div>
+                    <label for="tcbm">Container CBM:</label>
+                    <input type="number" class="text" id="tcbm" min="0">
+                </div>
+                <input type="Submit" class="con" value="Continue" >
+            </form> 
+             
+        </div>
         <form action="" class="collect" id="form">
             <div class="inpt">
                 <input type="number" placeholder="Carton Price($)" class="dollar-price">
@@ -26,9 +48,10 @@
                 <!-- <input type="number" class="no-ctns" value="1" disabled> -->
             <!-- </div> -->
         </form>
+    
             <input type="Submit" class="cal" value="Calculate" > 
             <div id="img-container">
-                <img src="/image/loading.gif" class="loading">
+                <img src="image/loading.gif" class="loading">
             </div>
             <div class="result">
                 <h2>The Price for :</h2>
