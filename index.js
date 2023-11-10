@@ -42,7 +42,7 @@ document.querySelector('.con').addEventListener('click', function(e){
     const freightRate = document.querySelector('#freight');
     const clearingCost = document.querySelector('#clearing');
     const overallCbm  =  document.querySelector('#tcbm');
-
+    const  label =  document.getElementsByClassName('.label');
     const ui = new UI()
     const goods = new Goods(dollarRate, freightRate, clearingCost, overallCbm)
 
@@ -55,6 +55,22 @@ document.querySelector('.con').addEventListener('click', function(e){
         freightRate.disabled = true;
         clearingCost.disabled = true;
         overallCbm.disabled = true;
+
+
+        inputs = document.querySelectorAll('.input_div')
+        inputs.forEach(input =>{
+            input.style.display = 'flex';
+            input.style.marginBottom ='10px'
+            input.children[0].style.flexBasis = '250px'
+
+        })
+
+
+        // label.style.display = 'inline'
+        // label.style.width = 'auto'
+        // document.querySelector('#dollar').style.display = 'inline'
+
+
         document.querySelector('.con').style.display = "none";
         document.querySelector('.collect').style.display = "block";
         document.querySelector('.cal').style.display = "block"; 
